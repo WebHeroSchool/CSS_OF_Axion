@@ -49,7 +49,7 @@
   max-width: 334px;
 }
 
-.menu__right {
+.menu_right {
   display: flex;
   justify-content: space-between;
   align-items: center;
