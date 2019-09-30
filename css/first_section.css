@@ -1,11 +1,11 @@
-h1, h2, h3 {
+.title {
   text-transform: uppercase;
   font-family: 'GothamPro-Bold';
   font-weight: normal;
-  cursor: default;
 }
 
-a {
+.menu__item, .promo__slider,
+.column__item, .social__link {
   text-decoration: none;
   color: #000000;
 }
@@ -161,7 +161,7 @@ a {
   color: #FFFFFF;
 }
 
-.promo__caption {
+.promo__slider {
   position: relative;
   width: 122px;
   padding-top: 17px;
