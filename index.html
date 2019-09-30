@@ -3,41 +3,49 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/first_section.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Axion</title>
   </head>
   <body>
     <header class="header">
-      <img src="" class="header__logo">
-      <nav class="header__nav menu">
-        <div class="menu_left">
-          <a class="menu__item" href="/">Shop</a>
-          <a class="menu__item" href="/">News</a>
-          <a class="menu__item" href="/">Team</a>
-          <a class="menu__item" href="/">Legacy</a>
-          <a class="menu__item" href="/">Help</a>
+      <div class="menu">
+        <div class="menu_left-wrap">
+          <img src="img/Axion-logo-1.png" class="header__logo">
+          <nav class="menu_left">
+            <a class="menu__item" href="/">Shop</a>
+            <a class="menu__item" href="/">News</a>
+            <a class="menu__item" href="/">Team</a>
+            <a class="menu__item" href="/">Legacy</a>
+            <a class="menu__item" href="/">Help</a>
+          </nav>
         </div>
-        <div class="menu_right">
+        <div class="menu_right-wrap">
           <div class="toggle"></div>
-          <input class="menu__search" type="text">
-          <button class="search-button"></button>
-          <a class="menu__item" href="/">Sign in</a>
-          <div class="menu__item cart">
-            <a class="cart-text" href="/">Cart</a>
-            <img class="cart-counter" src="/">
-          </div>
-          <a class="menu__lang">
-            <img class="lang-id" src="/">
-          </a>
+          <nav class="menu__right">
+            <form class="menu__item search">
+              <input class="search__input" type="text">
+              <button class="search__button" type="submit"></button>
+            </form>
+            <a class="menu__item signin" href="/">Sign in</a>
+            <a class="menu__item cart" href="/">
+              <span class="cart__text">Cart</span>
+              <span class="cart__icon">1</span>
+            </a>
+            <a class="menu__item lang">
+              <img class="lang-id" src="img/lang.jpg">
+            </a>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
     <main class="main">
       <section class="promo">
         <h1 class="promo__title">Legendary footwear reborn.</h1>
-        <p class="promo__caption">Shop now</p>
-        <img class="promo__arrow arrow">
+        <a class="promo__caption">Shop now
+        <img src="img/arrow.jpg" class="promo__arrow arrow"></a>
       </section>
       <section class="carousel">
         <h2 class="title carousel__title">Featured product</h2>
@@ -48,10 +56,10 @@
             <p class="product__name">Atlas Black/Rasta Axion</p>
             <p class="product__price">$89.00</p>
             <div class="product__colors">
-             <div class="p-color_small p-color1"></div>
-             <div class="p-color_big p-color2"></div>
-             <div class="p-color_small p-color3"></div>
-             <div class="p-color_small p-color4"></div>
+             <div class="product-color_small color_grey"></div>
+             <div class="product-color_big color_black"></div>
+             <div class="product-color_small color_red"></div>
+             <div class="product-color_small color_yellow"></div>
             </div>
           </div>
           <div class="carousel__line"></div>
@@ -61,10 +69,10 @@
             <p class="product__name">Camel/Chili Pepper Axion</p>
             <p class="product__price">$74.00</p>
             <div class="product__colors">
-             <div class="p-color_small p-color1"></div>
-             <div class="p-color_big p-color5"></div>
-             <div class="p-color_small p-color3"></div>
-             <div class="p-color_small p-color4"></div>
+             <div class="product-color_small color_grey"></div>
+             <div class="product-color_big color_orange"></div>
+             <div class="product-color_small color_red"></div>
+             <div class="product-color_small p-color_yellow"></div>
             </div>
           </div>
           <div class="carousel__line"></div>
@@ -74,10 +82,10 @@
             <p class="product__name">Mandel Smoke/Rust Axion</p>
             <p class="product__price">$69.00</p>
             <div class="product__colors">
-             <div class="p-color_small p-color1"></div>
-             <div class="p-color_big p-color6"></div>
-             <div class="p-color_small p-color7"></div>
-             <div class="p-color_small p-color4"></div>
+             <div class="product-color_small color_grey"></div>
+             <div class="product-color_big color_vinous"></div>
+             <div class="product-color_small color_blue"></div>
+             <div class="product-color_small color_yellow"></div>
             </div>
           </div>
           <div class="carousel__line"></div>
@@ -87,10 +95,10 @@
             <p class="product__name">Cloud/Electric Blue Axion</p>
             <p class="product__price">$69.00</p>
             <div class="product__colors">
-             <div class="p-color_small p-color1"></div>
-             <div class="p-color_big p-color8"></div>
-             <div class="p-color_small p-color3"></div>
-             <div class="p-color_small p-color4"></div>
+             <div class="product-color_small color_grey"></div>
+             <div class="product-color_big color_azure"></div>
+             <div class="product-color_small color_red"></div>
+             <div class="product-color_small color_yellow"></div>
             </div>
           </div>
         </div> 
@@ -152,51 +160,51 @@
       <section class="feed">
           <h2 class="title feed__title">
           <div class="feed-wrap">
-            <img class="feed__image1" src="">
-            <img class="feed__image2" src="">
-            <img class="feed__image3" src="">
-            <img class="feed__image4" src="">
-            <img class="feed__image5" src="">
-            <img class="feed__image6" src="">
-            <img class="feed__image7" src="">
+            <img class="feed__image" src="">
+            <img class="feed__image" src="">
+            <img class="feed__image" src="">
+            <img class="feed__image" src="">
+            <img class="feed__image" src="">
+            <img class="feed__image" src="">
+            <img class="feed__image" src="">
           </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer-wrap">
         <!--account column-->
-        <nav class="footer__column">
-          <h3 class="f-title">My account</h3>
-          <a class="f-item" href="/">Login</a>
-          <a class="f-item" href="/">Wish List</a>
-          <a class="f-item" href="/">Order History</a>
-          <a class="f-item" href="/">Track order</a>
-          <a class="f-item" href="/">Gift cards</a>
+        <nav class="column">
+          <h3 class="column__title">My account</h3>
+          <a class="column__item" href="/">Login</a>
+          <a class="column__item" href="/">Wish List</a>
+          <a class="column__item" href="/">Order History</a>
+          <a class="column__item" href="/">Track order</a>
+          <a class="column__item" href="/">Gift cards</a>
         </nav>
         <!--service column-->
-        <nav class="footer__column">
-          <h3 class="f-title">Customer service</h3>       
-          <a class="f-item" href="/">Contact us</a>
-          <a class="f-item" href="/">Help/FAQ</a></p>
-          <a class="f-item" href="/">Shipping</a>
-          <a class="f-item" href="/">Returns</a></p>
-          <a class="f-item" href="/">Size guide</a>
-          <a class="f-item" href="/">Holiday shopping</a></p>
+        <nav class="column">
+          <h3 class="column__title">Customer service</h3>       
+          <a class="column__item" href="/">Contact us</a>
+          <a class="column__item" href="/">Help/FAQ</a></p>
+          <a class="column__item" href="/">Shipping</a>
+          <a class="column__item" href="/">Returns</a></p>
+          <a class="column__item" href="/">Size guide</a>
+          <a class="column__item" href="/">Holiday shopping</a></p>
         </nav>
         <!--info column-->
-        <nav class="f-column">
-          <h3 class="f-title ">Miscellaneous</h3>
-          <a class="f-item" href="/">About Us</a>
-          <a class="f-item" href="/">Careers</a></p>
-          <a class="f-item" href="/">Privacy Policy</a>
-          <a class="f-item" href="/">Terms & Conditions</a></p>
-          <a class="f-item" href="/">Ethical Policy</a>
-          <a class="f-item" href="/">Homepage US/UK</a></p>
+        <nav class="column">
+          <h3 class="column__title">Miscellaneous</h3>
+          <a class="column__item" href="/">About Us</a>
+          <a class="column__item" href="/">Careers</a></p>
+          <a class="column__item" href="/">Privacy Policy</a>
+          <a class="column__item" href="/">Terms & Conditions</a></p>
+          <a class="column__item" href="/">Ethical Policy</a>
+          <a class="column__item" href="/">Homepage US/UK</a></p>
         </nav>
         <!--signup column-->
-        <nav class="f-column">
-          <h3 class="f-title">Newsletter sign up</h3> 
-          <p class="f-item">Get 10% Off Your Next Order!</p>
+        <nav class="column">
+          <h3 class="column__title">Newsletter sign up</h3> 
+          <p class="column__item">Get 10% Off Your Next Order!</p>
           <button class="signup-button">Sign up</button>
           <div class="social">
             <a class="social__link link-facebook" href="/"></a>
@@ -207,7 +215,7 @@
         </nav>                  
       </div>
       <div class="copyrights">
-        <p class="f__item copyrights__text">© 2019 Axion. All rights reserved.</p>
+        <p class="copyrights__text">© 2019 Axion. All rights reserved.</p>
         <div class="copyrights__webheroschool"></div>
       </div>
     </footer>
