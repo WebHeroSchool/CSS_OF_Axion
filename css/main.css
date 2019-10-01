@@ -1,15 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
+.body-wrap {
     font-family: 'GothamPro';
     max-width: 1170px;
     min-width: 320px;
     margin: 0 auto;
-}
-
-*, :before, :after {
-    box-sizing: border-box;
 }

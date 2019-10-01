@@ -1,13 +1,15 @@
 .title {
-  text-transform: uppercase;
   font-family: 'GothamPro-Bold';
   font-weight: normal;
+  text-transform: uppercase;
 }
 
-.menu__item, .promo__slider,
-.column__item, .social__link {
+.menu__item,
+.promo__slider,
+.column__item,
+.social__link {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 .header{
@@ -20,16 +22,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'GothamPro-Bold';
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 11px;
+  margin-bottom: 29px;
+  padding-top: 33px; 
+  font: normal 12px/11px 'GothamPro-Bold';
   text-transform: uppercase;
-  margin: 0 0 29px 0;
-  padding: 33px 0 0 0; 
 }
 
-.menu_left-wrap,.menu_right-wrap {
+.menu_left-wrap,
+.menu_right-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,9 +37,9 @@
 }
 
 .header__logo {
-  margin-right: 45px;
-  height: 57px;
   width: 55px;
+  height: 57px;
+  margin-right: 45px;
 }
 
 .menu_left {
@@ -47,6 +47,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 334px;
+  height: 24px;
 }
 
 .menu_right {
@@ -58,8 +59,8 @@
 }
 
 .menu__item {
-  margin-right: 35px;
   height: 11px;
+  margin-right: 35px;
 }
 
 .menu__item:hover {
@@ -69,21 +70,18 @@
 .search {
   position: relative;
   align-self: center;
-  height: 28px;
   width: 178px;
+  height: 28px;
 }
 
 .search__input {
   width: 100%;
   height: 100%;
-  font-family: 'GothamPro';
-  font-size: 14px;
-  font-style: italic;
-  font-weight: normal;
   border: none;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000;
   background: transparent;
   outline: none;
+  font: normal italic 14px 'GothamPro';
   color: #000;
 }
 
@@ -100,8 +98,7 @@
 
 .search__button:before {
   content: "\f002";
-  font-family: FontAwesome;
-  font-size: 14px;
+  font: 14px FontAwesome;
   color: #000;
 }
 
@@ -115,13 +112,13 @@
 .cart__icon {
   display: inline-block;
   vertical-align: middle;
-  background-color: black;
-  color: #fff;
   min-width: 15px;
   min-height: 15px;
   border-radius: 50%;
   padding: 2px 5px 0 5px;
   font-size: 10px;
+  background-color: #000;
+  color: #fff;
 }
 
 .lang {
@@ -140,47 +137,106 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto 54px auto;
-  padding: 10px 0 0 59px;
-  background: url(../img/background_promo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   max-width: 1030px;
   min-width: 320px;
   height: 280px;
+  margin: 0 auto 54px auto;
+  padding: 10px 0 0 59px;
+  background: url(../img/background_promo.jpg) no-repeat;
+  background-size: cover;
 }
 
 .promo__title {
   max-width: 195px;
   height: 87px;
-  font-family: 'GothamPro-Bold';
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 29px;
+  font: normal 30px/29px 'GothamPro-Bold';
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .promo__slider {
   position: relative;
   width: 122px;
   padding-top: 17px;
-  font-family: 'GothamPro-Bold';
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 11px;
+  font: normal 12px/11px 'GothamPro-Bold';
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
 }
 
 .promo__arrow {
-  display: inline-block;
   position: absolute;
+  display: inline-block;
   top: 70%;
   right: 0;
   width: 43px;
   line-height: 11px;
+}
+
+@media screen and (max-width: 1024px){
+  .body-wrap {
+    max-width: 930px;
+  }
+  .header{
+    max-width: 930px;
+  }
+
+  .menu {
+    margin-bottom: 39px;
+    padding-top: 28px;
+  }
+
+  .header__logo {
+    height: 62px;
+    width: 61px;
+    margin-right: 29px;
+  }
+
+  .search {
+    position: relative;
+    align-self: center;
+    height: 28px;
+    width: 161px;
+    margin-right: 33px;
+  }
+  
+  .signin {
+    width: 49px;
+    margin-right: 25px;
+  }
+
+  .cart {
+    width: 53px;
+    margin-right: 27px;
+  }
+
+  .lang-id {
+    width: 18px;
+  }
+
+  .promo {
+    height: 253px;
+    max-width: 930px;
+    margin: 0 auto 67px auto;
+    padding: 5px 0 0 54px;
+  }
+
+  .promo__title {
+    max-width: 209px;
+    height: 85px;
+  }
+
+  .promo__slider {
+    width: 130px;
+    padding-top: 13px;
+  }
+
+  .promo__arrow {
+    top: 70%;
+    right: 0;
+    width: 46px;
+    line-height: 11px;
+  }
 }
 
 .blog {
@@ -202,5 +258,3 @@
 .footer {
   display: none;
 }
-
-
