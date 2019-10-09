@@ -8,5 +8,6 @@
     font-family: 'GothamPro';
     max-width: 1170px;
     min-width: 320px;
+    width: 88%;
     margin: 0 auto;
 }
