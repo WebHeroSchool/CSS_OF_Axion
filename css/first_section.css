@@ -386,7 +386,11 @@
   .search__input {
     display: none;
   }
-
+  
+  .carousel-wrap {
+    justify-content: space-around;
+  }
+  
   .carousel__line {
     display: none;
   }
@@ -478,7 +482,8 @@
   }
 
   .carousel-wrap {
-    width: 80%;
+    justify-content: space-around;
+    min-width: 80%;
     margin: 0 auto;
   }
 
