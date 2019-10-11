@@ -197,23 +197,22 @@
   justify-content: space-between;
   width: 230px;
   height: 261px;
-  padding: 0 19px 28px 28px;
+  padding: 0 11px 28px 11px;
 }
 
 .product__img {
   align-self: center;
   width: 188px;
   height: 173px;
-  margin: 0 4px 21px 0;
+  margin-bottom: 21px ;
+  transform: translateX(2px);
 }
 
 .product__name {
-  transform: translateX(-9%);
   font: bold 12px/11px 'GothamPro';
 }
 
 .product__price {
-  transform: translateX(-32%);
   font: normal 14px/13px 'GothamPro-Bold';
 }
 
@@ -237,7 +236,7 @@
   justify-content: space-between;
   width: 54px;
   align-items: center;
-  transform: translateX(13%);
+  /*transform: translateX(13%);*/
 }
 
 .product-color_small {
