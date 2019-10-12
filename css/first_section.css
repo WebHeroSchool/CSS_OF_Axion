@@ -493,10 +493,6 @@
     padding: 0 5px 17px 9px;
   }
 
-  .product_second {
-    padding: 0 0 17px 7px;
-  }
-
   .product__img {
     width: 232px;
     height: 214px;
@@ -522,7 +518,17 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 610px) {
+  .product_second {
+    display: none;
+  }
+
+  .promo {
+    background-position-x: -253px;
+  }
+}
+
+@media (max-width: 480px) {
   .menu {
     margin-bottom: 26px;
     padding-top: 24px;
@@ -530,7 +536,6 @@
 
   .header{
     width: 74.5%;
-    max-width: 279px;
   }
 
   .header__logo {
@@ -546,9 +551,9 @@
 
   .promo {
     height: 191px;
-    margin-bottom: 38px;
-    padding: 25px 0 0 46px;
-    background-position-x: -63px;
+    margin-bottom: 34px;
+    padding: 25px 0 0 48px;
+    background-position-x: -60px;
   }
 
   .promo__title {
@@ -568,20 +573,74 @@
     top:55%;
   }
 
-  .product_second {
-    display: none;
+  .carousel__title {
+    font-size: 20px;
+    height: 20px;
+    margin-bottom: 0px;
+  }
+
+  .carousel-wrap {
+    justify-content: center;
+    min-width: 75%;
+  }
+
+  .carousel__prod {
+    width: 281px;
+    height: 222px;
+    padding: 0 0 0 14px;
+  }
+
+  .product__img {
+    width: 165px;
+    height: 158px;
+    margin-bottom: 23px;
+  }
+
+  .product__name {
+    font: bold 15px/14px 'GothamPro';
+  }
+
+  .product__price {
+    font: normal 20px/19px 'GothamPro-Bold';
+  }
+
+  .product__colors {
+    width: 75px;
+  }
+
+  .product-color_small,
+  .product-color_big {
+    width: 15px;
+    height: 15px;
   }
 }
 
 @media (max-width: 320px) {
-  .header{
+  .header,
+  .carousel-wrap {
     width: 88%;
     max-width: 280px;
   }
-
+  
   .promo {
     padding: 25px 0 0 20px;
     background-position-x: -89px;
+    margin-bottom: 34px;
+  }
+  
+  .carousel__prod {
+    height: 223px;
+    padding-left: 13px;
+  }
+
+  .carousel__title {
+    height: 20px;
+    margin-bottom: 0;
+  }
+
+  .product__img {
+    height: 158px;
+    margin-bottom: 18px;
   }
 }
 
