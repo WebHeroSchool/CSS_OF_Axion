@@ -1,0 +1,146 @@
+.blog {
+  height: 494px;
+  margin-bottom: 50px;
+  background-color: black;
+  color: #fff;
+}
+
+.blog-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 94%;
+  margin: auto;
+}
+
+.blog__video {
+  display: flex;
+  height: 361px;
+  width: 644px;
+  background: url(../img/video.jpg) no-repeat;
+  background-size: contain;
+}
+
+.video-play {
+  position: relative;
+  display: flex;
+  width: 46px;
+  height: 46px;
+  margin: auto;
+  background: #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video-play::after {
+  position: absolute;
+  width: 0;
+  top: 18px;
+  right: 11px;
+  content: "";
+  border: 5.5px solid transparent;
+  border-left: 9.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.video-play:hover {
+   box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+}
+
+.blog__column_left,
+.blog__column_rigth {
+  margin-right: 12px;
+}
+
+.blog__column_rigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap:  nowrap; 
+  max-width:267px;
+}
+
+.blog__title {
+  height: 69px;
+  font: normal 22px/27px 'GothamPro-Bold';
+}
+
+.blog__text {
+  height: 110px;
+  font: normal 14px/17px 'GothamPro';
+}
+
+.blog__caption {
+  position: relative;
+  width: 137px;
+  font: normal 12px/11px 'GothamPro-Bold';
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blog__arrow {
+  position: absolute;
+  display: inline-block;
+  width: 43px;
+  top: 15%;
+  right: 0;
+}
+
+@media (max-width: 1169px) {
+  .blog {
+    height: 442px;
+  }
+  
+  .blog-wrap {
+    width: 93%; 
+  }
+  
+  .blog__column_rigth {
+    max-width:250px;
+    margin-right: 0px;
+  }
+
+  .blog__video {
+    height: 325px;
+    width: 578px;
+  }
+
+  .video-play {
+    width: 42px;
+    height: 42px;
+  }
+
+  .video-play::after {
+    top: 17px;
+    right: 12px;
+    border-width: 4.5px;
+    border-left-width: 8.5px;
+  }
+
+  .video-play:hover {
+     box-shadow: 3px;
+  }
+
+  .blog__title {
+    height: 62px;
+    /*margin-bottom: 10px;*/
+    line-height:  26px;
+  }
+  
+  .blog__text {
+    height: 96px;
+    /*margin-bottom: 6px;*/
+    font: normal 13px/16px 'GothamPro';
+  }
+
+  .blog__caption {
+    width: 145px; 
+    height: 14px;
+  }
+
+  .blog__arrow {
+    width: 48px;
+  }
+}
