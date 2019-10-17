@@ -9,15 +9,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
   width: 94%;
+  height: 100%;
   margin: auto;
 }
 
 .blog__video {
   display: flex;
-  height: 361px;
   width: 644px;
+  height: 361px;
   background: url(../img/video.jpg) no-repeat;
   background-size: contain;
 }
@@ -88,13 +88,14 @@
   right: 0;
 }
 
-@media (max-width: 1169px) {
+@media screen and (max-width: 1169px) {
   .blog {
     height: 442px;
   }
   
   .blog-wrap {
-    width: 93%; 
+    justify-content: space-around;
+    width: 93%;
   }
   
   .blog__column_rigth {
@@ -120,18 +121,18 @@
   }
 
   .video-play:hover {
-     box-shadow: 3px;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.2);
   }
 
   .blog__title {
-    height: 62px;
-    /*margin-bottom: 10px;*/
+    height: auto;
+    margin-bottom: 10px;
     line-height:  26px;
   }
   
   .blog__text {
-    height: 96px;
-    /*margin-bottom: 6px;*/
+    height: auto;
+    margin-bottom: 15px;
     font: normal 13px/16px 'GothamPro';
   }
 
@@ -142,5 +143,48 @@
 
   .blog__arrow {
     width: 48px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .blog__video {
+    height: 295px;
+    width: 525px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .blog-wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .blog__column_left,
+  .blog__column_rigth {
+    margin-right: 0px;
+  }
+
+  .blog__column_rigth {
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .blog__video {
+    width: 500px;
+    height: 280px;
+  }
+  
+  .blog__caption {
+    display: none;
+  }
+
+  .blog__title {
+    height: 36px;
+    font-size:  28px;
+  }
+  
+  .blog__text {
+    height: 65px;
+    font-size: 16px;
   }
 }

@@ -293,7 +293,7 @@
   background-color: #257DA9;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .body-wrap {
     width: 91%;
     max-width: 930px;
@@ -386,7 +386,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 929px) {
+@media screen and (min-width: 769px) and (max-width: 929px) {
   .header__logo {
     margin-right: 20px;
   }
@@ -415,7 +415,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
   .body-wrap {
     width: 100%;
   }
@@ -467,7 +467,6 @@
 
   .promo {
     height: 416px;
-    margin-bottom: 62px;
     padding: 36px 0 0 44px;
     background-position-x: -128px;
   }
@@ -516,6 +515,7 @@
 
   .product__name {
     font: bold 20px/19px 'GothamPro';
+    white-space: nowrap;
   }
 
   .product__price {
@@ -533,7 +533,7 @@
   }
 }
 
-@media (max-width: 610px) {
+@media screen and (max-width: 610px) {
   .product_second {
     display: none;
   }
@@ -543,7 +543,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .menu {
     margin-bottom: 26px;
     padding-top: 24px;
@@ -566,7 +566,6 @@
 
   .promo {
     height: 191px;
-    margin-bottom: 34px;
     padding: 25px 0 0 48px;
     background-position-x: -60px;
   }
@@ -586,6 +585,10 @@
     width: 46px;
     line-height: 11px;
     top:55%;
+  }
+  
+  .carousel {
+    height: 412px;
   }
 
   .carousel__title {
@@ -630,7 +633,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .header,
   .carousel-wrap {
     width: 88%;
