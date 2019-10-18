@@ -23,8 +23,8 @@
 
 .video-play {
   position: absolute;
-  top: 45%;
-  right: 45%;
+  top: 44%;
+  right: 45.5%;
   display: flex;
   width: 46px;
   height: 46px;
@@ -54,7 +54,7 @@
     margin-right: 12px;
 }
 
-.blog__column_rigth {
+.blog__column_right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -139,7 +139,7 @@
   }
 
   .blog__caption {
-    width: 145px; 
+    width: 90px; 
     height: 14px;
   }
 
@@ -245,13 +245,72 @@
   .video-play {
     width: 48px;
     height: 48px;
-    background: #FFFFFF;
-    border-radius: 50%;
-    cursor: pointer;
   }
 
   .video-play::after {
     top: 21px;
     right: 14px;
   }
+}
+
+@media (max-width: 480px) {
+  .blog {
+    height: 420px;
+  }
+
+  .blog::before {
+    top: 1px;
+    height: 17px;
+    background: linear-gradient(to top right, #000 48%, #fff 52%);
+  }
+  
+  .blog-wrap {
+    justify-content: flex-start;
+    width: 75%;
+  }
+
+  .blog__title {
+    width: 241px;
+    height: 64px;
+    margin: 0 auto;
+    font: normal 19px/25px 'GothamPro-Bold';
+  }
+  
+  .blog__text {
+    height: auto;
+    margin-bottom: 0;
+    font: normal 14px/18px 'GothamPro';
+  }
+  
+  .blog__video {
+    width: 100%;
+    height: 160px;
+    background-position: center;
+  }
+  
+  .video-play {
+    width: 21px;
+    height: 21px;
+    top: 32.5%;
+    right: 46%;
+  }
+
+  .video-play::after {
+    top: 9px;
+    right: 5px;
+    border-width: 2.5px;
+    border-left-width: 4.5px;
+  }
+
+  .blog__column_left {
+    height: 217px;
+  }
+
+  .blog__column_right {
+    justify-content: center;
+    height: 200px;
+    padding-bottom: 6px;
+    text-align: center;
+  }
+
 }
