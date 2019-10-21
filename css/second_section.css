@@ -181,9 +181,9 @@
 }
 
 .story__date {
-  align-self: flex-end;
-  font: normal 12px/11px 'GothamPro';
-  opacity: 0.4;
+  align-self: flex-start;
+  font: normal 12px/11px 'GothamPro-Bold';
+  opacity: 0.3;
 }
 
 .story__arrow {
@@ -501,7 +501,7 @@
 
   .story__date {
     align-self: flex-end;
-    font: normal 15px/14px 'GothamPro';
+    font: normal 15px/14px 'GothamPro-Bold';
     opacity: 1;
   }
 
@@ -523,12 +523,7 @@
   .story_third,.story_second {
     display: none
   }
-
-  .stories {
-    justify-content: flex-start;
-    padding-top: 0px;
-  }
-
+  
   .stories__title {
     margin-bottom: 30px;
   }
@@ -630,7 +625,9 @@
   }
   
   .stories {
+    justify-content: flex-start;
     height: 520px;
+    padding-top: 40px;
   }
 
   .stories-wrap {
@@ -639,11 +636,10 @@
   }
 
   .stories__title {
-    height: 85px;
+    height: 46px;
     font: normal 20px/19px 'GothamPro-Bold';
     white-space: nowrap;
     margin-bottom:  0;
-    padding-top: 40px;
   }
 
   .story {
@@ -656,7 +652,7 @@
     width:  100%;
     max-width: 285px;
     min-height: 148px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     background-size: cover;
   }
 
@@ -684,37 +680,45 @@
   }
 
   .story__caption {
-    max-width: 50%;
+    max-width: 49%;
     font: normal 12px/11px 'GothamPro-Bold';
   }
 
   .story__arrow {
     width: 28%;
-    bottom: 6px;
-    border-bottom: 1px solid #fff;
+    bottom: 5px;
   }
 
   .story__arrow:before, .arrow:after {
-    position: absolute;
-    width: 4px;
-    height: 1px;
+    width: 5px;
   }
-
-
+  
   .story__date {
-    align-self: flex-end;
-    font: normal 15px/14px 'GothamPro';
-    opacity: 1;
+    font: normal 15px/14px 'GothamPro-Bold';
   }
 }
 
 @media (max-width: 320px) {
-  .blog-wrap {
+  .blog-wrap,
+  .stories-wrap {
     width: 88%;
+    max-width: 280px;
   }
 
   .blog__text {
-    max-width: 280px;
     padding-top: 4px;
+  }
+
+  .stories {
+    justify-content: flex-start;
+  }
+
+  .story__img {
+    margin-bottom: 29px;
+  }
+
+  .stories__title {
+    padding-top: 25px;
+    height: 73px;
   }
 }
