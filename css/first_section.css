@@ -1,7 +1,7 @@
-.body-wrap {
+.header,
+.main {
     font-family: 'GothamPro';
     max-width: 1030px;
-    min-width: 320px;
     width: 88%;
     margin: 0 auto;
 }
@@ -14,7 +14,6 @@
 
 .menu__item,
 .promo__slider,
-.column__item,
 .social__link {
   text-decoration: none;
   color: #000;
@@ -294,7 +293,8 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .body-wrap {
+  .header,
+  .main {
     width: 91%;
     max-width: 930px;
   }
@@ -416,7 +416,8 @@
 }
 
 @media (max-width: 768px){
-  .body-wrap {
+  .body-wrap,
+  .main {
     width: 100%;
   }
 
@@ -678,12 +679,4 @@
     height: 158px;
     margin-bottom: 25px;
   }
-}
-
-.feed {
-  display: none;
-}
-
-.footer {
-  display: none;
 }

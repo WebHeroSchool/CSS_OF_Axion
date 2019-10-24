@@ -94,7 +94,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 560px;
+  height: 559px;
   padding-top: 40px;
 }
 
@@ -148,14 +148,14 @@
 }
 
 .story__name {
-  height: 24px;
-  font: normal 18px/17px 'GothamPro-Bold';
+  height: 40px;
+  font: normal 18px/40px 'GothamPro-Bold';
 }
 
 .story__text {
-  height: 106.27px;
-  max-width: 290px;
-  font: normal 13px/16px 'GothamPro';
+  height: 120px;
+  width: 98.5%;
+  font: normal 14px/17px 'GothamPro';
 }
 
 .story__options {
