@@ -553,6 +553,7 @@
   .story__img {
     width:  100%;
     min-height: 280px;
+    margin-bottom: 20px;
   }
 
   .img_anagoa {
