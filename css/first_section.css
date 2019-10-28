@@ -1,0 +1,682 @@
+.header,
+.main {
+    font-family: 'GothamPro';
+    max-width: 1030px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.title {
+  font-family: 'GothamPro-Bold';
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.menu__item,
+.promo__slider,
+.social__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 116px;
+  font: normal 12px/11px 'GothamPro-Bold';
+  text-transform: uppercase;
+}
+
+.menu_left-wrap,
+.menu_right-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header__logo {
+  width: 55px;
+  height: 57px;
+  margin-right: 45px;
+  background: url(../img/Axion-logo-1.png) center no-repeat;
+  background-size: cover;
+}
+
+.menu_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 334px;
+  height: 24px;
+}
+
+.menu_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 24px;
+}
+
+.menu__item {
+  height: 11px;
+  margin-right: 35px;
+}
+
+.menu__item:hover {
+  opacity: 0.7;
+  transition-duration: 0.4s;
+}
+
+.signin {
+  max-width: 49px;
+}
+
+.search {
+  position: relative;
+  align-self: center;
+  width: 178px;
+  height: 28px;
+}
+
+.search__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  outline: none;
+  font: normal italic 14px 'GothamPro';
+  color: #000;
+}
+
+.search__button {
+  position: absolute; 
+  top: 25%;
+  right: 0px;
+  width: 16px;
+  height: 14px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.search__button::before {
+  content: "\f002";
+  font: 14px FontAwesome;
+  color: #000;
+}
+
+.cart {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 54px;
+}
+
+.cart__icon {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 15px;
+  min-height: 15px;
+  border-radius: 50%;
+  padding: 2px 5px 0 5px;
+  font-size: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.lang {
+  margin: 0;
+  padding-top: 2px;
+  align-self: flex-start;
+  height: 20px;
+  cursor: pointer;
+}
+
+.lang-id {
+  width: 20px;
+  height: 20px;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 280px;
+  padding: 10px 0 0 59px;
+  background: url(../img/background_promo.jpg) no-repeat;
+  background-size: cover;
+}
+
+.promo__title {
+  max-width: 195px;
+  height: 87px;
+  font: normal 30px/29px 'GothamPro-Bold';
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.promo__slider {
+  position: relative;
+  width: 122px;
+  padding-top: 17px;
+  font: normal 12px/11px 'GothamPro-Bold';
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.promo__arrow {
+  position: absolute;
+  display: inline-block;
+  width: 43px;
+  top: 70%;
+  right: 0;
+  line-height: 11px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 378px;
+}
+
+.carousel__title {
+  height: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.carousel-wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 240px
+}
+
+.carousel__prod {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 230px;
+  height: 261px;
+  padding: 0 12px;
+}
+
+.carousel__line {
+  align-self: center;
+  margin-bottom: 90px;
+  height: 100px;
+  border-left: 1px solid #000;
+  opacity: 0.2;
+}
+
+.product__img {
+  align-self: center;
+  width: 188px;
+  height: 173px;
+  margin-bottom: 30px;
+}
+
+.product__name {
+  height: 20px;
+  font: bold 12px/11px 'GothamPro';
+}
+
+.product__price {
+  font: normal 14px/13px 'GothamPro-Bold';
+}
+
+.product__properties {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.product__colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 54px;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.product-color_small {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.product-color_big {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.color_black {
+  background-color: #0E1211;
+}
+
+.color_grey {
+  background-color: #C4C4C4;
+}
+
+.color_red {
+  background-color: #B62E3C;
+}
+
+.color_yellow {
+  background-color: #FDB431;
+}
+
+.color_orange {
+  background-color: #E29D69;
+}
+
+.color_vinous {
+  background-color: #762E31;
+}
+
+.color_blue {
+  background-color: #41479B;
+}
+
+.color_azure {
+  background-color: #257DA9;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header,
+  .main {
+    width: 91%;
+    max-width: 930px;
+  }
+
+  .menu {
+    height: 129px;
+    padding-bottom: 12px;
+  }
+
+  .header__logo {
+    height: 62px;
+    width: 61px;
+    margin-right: 29px;
+  }
+
+  .search {
+    position: relative;
+    align-self: center;
+    height: 28px;
+    width: 161px;
+    margin-right: 33px;
+  }
+  
+  .signin {
+    margin-right: 26px;
+  }
+
+  .cart {
+    width: 53px;
+    margin-right: 27px;
+  }
+
+  .lang-id {
+    width: 18px;
+  }
+
+  .promo {
+    height: 253px;
+    padding: 5px 0 0 54px;
+  }
+
+  .promo__title {
+    max-width: 209px;
+    height: 85px;
+  }
+
+  .promo__slider {
+    width: 130px;
+    padding-top: 13px;
+  }
+
+  .promo__arrow {
+    top: 70%;
+    right: 0;
+    width: 46px;
+    line-height: 11px;
+  }
+  
+  .carousel {
+    height: 418px;
+  }
+
+  .carousel-wrap {
+    height: 250px;
+  }
+
+  .carousel__prod {
+    width: 208px;
+    height: 250px;
+    padding: 6px 11px;
+  }
+
+  .product__img {
+    width: 172px;
+    height: 163px;
+    margin-bottom: 34px;
+  }
+
+  .product__colors {
+    width: 49px;
+  }
+
+  .product-color_small {
+    width: 6.3px;
+  }
+
+  .product-color_big {
+    width: 8.4px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 929px) {
+  .header__logo {
+    margin-right: 20px;
+  }
+
+  .search {
+    position: relative;
+    align-self: center;
+    height: 28px;
+    max-width: 48px;
+  }
+
+  .search__input {
+    display: none;
+  }
+  
+  .carousel-wrap {
+    justify-content: space-around;
+  }
+  
+  .carousel__line {
+    display: none;
+  }
+
+  .product_fourth {
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .body-wrap,
+  .main {
+    width: 100%;
+  }
+
+  .menu {
+    height: 114px;
+  }
+
+  .header{
+    width: 89%;
+    max-width: 682px;
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    width:156px;
+    height: 34px;
+    background: url(../img/logo-mobile.png) center no-repeat;
+    background-size: cover;
+  }
+
+  .menu_left,
+  .menu_right,
+  .carousel__line,
+  .product_third,
+  .product_fourth  {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    display: block;
+    width: 61px;
+    height: 9px; 
+    background: #000;
+    cursor: pointer;
+    transform: translateY(-8px);
+  }
+
+  .toggle::after {
+    position: absolute;
+    transform: translateY(190%);
+    width: 100%;
+    height: 100%;
+    content: ''; 
+    background: inherit;
+  }
+
+  .promo {
+    height: 416px;
+    padding: 36px 0 0 44px;
+    background-position-x: -128px;
+  }
+
+  .promo__title {
+    max-width: 355px;
+    height: 181px;
+    font: normal 50px/48px 'GothamPro-Bold';
+  }
+
+  .promo__slider {
+    width: 203px;
+    padding-top: 10px;
+    font: normal 20px/19px 'GothamPro-Bold';
+  }
+
+  .promo__arrow {
+    width: 71px;
+    line-height: 19px;
+    top:55%;
+  }
+  
+  .carousel {
+    justify-content: flex-end;
+    height: 480px;
+    margin-bottom: 30px;
+  }
+
+  .carousel__title {
+    height: 55px;
+    font-size: 31px;
+    margin: 0;
+  }
+
+  .carousel-wrap {
+    min-width: 80%;
+    height: 365px;
+    margin: 0 auto;
+  }
+
+  .carousel__prod {
+    justify-content: space-between;
+    width: 265.4px;
+    height: 324px;
+    padding: 8px 6px;
+  }
+
+  .product__img {
+    width: 232px;
+    height: 214px;
+    margin-bottom: 18px;
+  }
+
+  .product__name {
+    font: bold 20px/19px 'GothamPro';
+    white-space: nowrap;
+  }
+
+  .product__price {
+    font: normal 25px/24px 'GothamPro-Bold';
+  }
+
+  .product__colors {
+    align-self: center;
+    width: 95px;
+  }
+
+  .product-color_small,
+  .product-color_big {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .product_second {
+    display: none;
+  }
+
+  .carousel-wrap {
+    justify-content: center;
+  }
+
+  .promo {
+    background-position-x: -253px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    height: 72px;
+  }
+
+  .header{
+    width: 74.5%;
+  }
+
+  .header__logo {
+    width:104px;
+    height: 22px;
+  }
+
+  .toggle {
+    width: 41px;
+    height: 5px;
+    transform: translateY(-4px);
+  }
+
+  .promo {
+    height: 191px;
+    padding: 25px 0 0 48px;
+    background-position-x: -60px;
+  }
+
+  .promo__title {
+    max-width: 206px;
+    height: 67px;
+    font: normal 20px/19px 'GothamPro-Bold';
+  }
+
+  .promo__slider {
+    width: 124px;
+    font: normal 12px/11px 'GothamPro-Bold';
+  }
+
+  .promo__arrow {
+    width: 46px;
+    line-height: 11px;
+    top:55%;
+  }
+  
+  .carousel {
+    justify-content: center;
+    height: 347px;
+    margin-bottom: 20px;
+  }
+
+  .carousel__prod {
+    justify-content: space-between;
+    width: 261px;
+    height: 227px;
+    padding: 0px 6px;
+  }
+
+  .product__img {
+    width: 232px;
+    height: 214px;
+    margin-bottom: 23px;
+  }
+
+  .carousel__title {
+    font-size: 20px;
+    height: 20px;
+    margin-bottom: 0px;
+  }
+
+  .carousel-wrap {
+    justify-content: center;
+    min-width: 75%;
+    height: 258px; 
+  }
+
+  .product__img {
+    width: 165px;
+    height: 158px;
+    margin-bottom: 23px;
+  }
+
+  .product__name {
+    font: bold 15px/14px 'GothamPro';
+  }
+
+  .product__price {
+    font: normal 20px/19px 'GothamPro-Bold';
+  }
+
+  .product__colors {
+    width: 75px;
+  }
+
+  .product-color_small,
+  .product-color_big {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header,
+  .carousel-wrap {
+    width: 88%;
+    max-width: 280px;
+  }
+  
+  .promo {
+    padding: 25px 0 0 20px;
+    background-position-x: -89px;
+  }
+  
+  .carousel__prod {
+    height: 223px;
+  }
+
+  .carousel__title {
+    height: 20px;
+    margin-bottom: 0;
+  }
+
+  .product__img {
+    height: 158px;
+    margin-bottom: 25px;
+  }
+}

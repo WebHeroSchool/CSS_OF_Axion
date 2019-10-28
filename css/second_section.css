@@ -1,0 +1,734 @@
+.blog {
+  height: 494px;
+  background-color: black;
+  color: #fff;
+}
+
+.blog-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 94%;
+  height: 100%;
+  margin: auto;
+}
+
+.blog__video {
+  width: 644px;
+  height: 361px;
+  background: url(../img/video.jpg) no-repeat;
+  background-size: contain;
+}
+
+.video-play {
+  position: absolute;
+  top: 44%;
+  right: 45.5%;
+  display: flex;
+  width: 46px;
+  height: 46px;
+  margin: auto;
+  background: #FFFFFF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.video-play::after {
+  position: absolute;
+  width: 0;
+  top: 18px;
+  right: 11px;
+  content: "";
+  border: 5.5px solid transparent;
+  border-left: 9.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.video-play:hover {
+   box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   transition-duration: 0.3s;
+}
+
+.blog__column_left {
+    position: relative;
+    margin-right: 12px;
+}
+
+.blog__column_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap:  nowrap; 
+  max-width:267px;
+  margin-right: 12px;
+}
+
+.blog__title {
+  height: 69px;
+  font: normal 22px/27px 'GothamPro-Bold';
+}
+
+.blog__text {
+  height: 110px;
+  font: normal 14px/17px 'GothamPro';
+}
+
+.blog__caption {
+  position: relative;
+  width: 84px;
+  font: normal 12px/11px 'GothamPro-Bold';
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.blog__arrow {
+  position: absolute;
+  display: inline-block;
+  width: 43px;
+  top: 19%;
+  left: 120%;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 559px;
+  padding-top: 40px;
+}
+
+.stories__title {
+  width: 100%;
+  height: 22px;
+  font: normal 22px/21px 'GothamPro-Bold';
+  text-align: center;
+}
+
+.stories-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 418px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 307px;
+  height: 338px;
+}
+
+.story_second,
+.story_prime {
+  margin-right: 3px;
+}
+
+.story__img {
+  width: 100%;
+  height: 43.5%;
+  min-height: 147px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.img_anagoa {
+  background-image: url(../img/story_1.jpg);
+}
+
+.img_flip {
+  background-image: url(../img/story_2.jpg);
+}
+
+.img_pro {
+  background-image: url(../img/story_3.jpg);
+}
+
+.story__name {
+  height: 40px;
+  font: normal 18px/40px 'GothamPro-Bold';
+}
+
+.story__text {
+  height: 120px;
+  width: 98.5%;
+  font: normal 14px/17px 'GothamPro';
+}
+
+.story__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%;
+  height: 12px;
+}
+
+.caption:hover {
+  opacity: 0.7;
+  transition-duration: 0.4s;
+}
+
+.story__caption {
+  position: relative;
+  width: 112px;
+  padding-bottom: 1px;
+  font: normal 12px/11px 'GothamPro-Bold';
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.story__date {
+  align-self: flex-start;
+  font: normal 12px/11px 'GothamPro-Bold';
+  opacity: 0.3;
+}
+
+.story__arrow {
+  display: inline-block;
+  width: 26px;
+  right: 0;
+  bottom: 6px;
+  position: absolute;
+  border-bottom: 1px solid #000;
+}
+
+.story__arrow:before, .arrow:after {
+  position: absolute;
+  width: 4px;
+  height: 1px;
+  content: "";
+  border-bottom: 1px solid inherit;
+  background: #000;
+}
+
+.story__arrow:before {
+  right: 0;
+  transform: rotate(315deg);
+  transform-origin: top right;
+}
+
+.story__arrow:after {
+  right: 0;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+@media screen and (max-width: 1169px) {
+  .blog {
+    height: 442px;
+  }
+  
+  .blog-wrap {
+    justify-content: space-around;
+    width: 93%;
+  }
+  
+  .blog__column_right {
+    max-width: 280px;
+    margin-right: 0px;
+    padding-left: 20px;
+  }
+
+  .blog__video {
+    height: 325px;
+    width: 578px;
+  }
+
+  .video-play {
+    width: 42px;
+    height: 42px;
+  }
+
+  .video-play::after {
+    top: 17px;
+    right: 12px;
+    border-width: 4.5px;
+    border-left-width: 8.5px;
+  }
+
+  .video-play:hover {
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.2);
+  }
+
+  .blog__title {
+    height: auto;
+    margin-bottom: 10px;
+    line-height:  26px;
+  }
+  
+  .blog__text {
+    height: auto;
+    margin-bottom: 15px;
+    font: normal 13px/16px 'GothamPro';
+  }
+
+  .blog__caption {
+    width: 90px; 
+    height: 14px;
+  }
+
+  .blog__arrow {
+    width: 48px;
+  }
+
+  .stories {
+    height: 583px;
+    padding-top: 40px;
+  }
+
+  .stories-wrap {
+    height: 418px;
+    padding-top: 13px;
+  }
+
+  .story {
+    justify-content: space-between;
+    width: 32%;
+    max-width: 277px;
+    min-height: 345px;
+    padding-bottom: 7px;
+}
+
+  .story_second,
+  .story_prime {
+    margin-right: 3px;
+  }
+
+  .story__img {
+    margin-bottom: 0;
+  }
+  
+  .story__name {
+    min-height: 30px;
+  }
+
+  .story__text {
+    min-height: 115.27px;
+    font: normal 13px/16px 'GothamPro';
+  }
+
+  .story__caption {
+    width: 110px;
+  }
+
+  .story__arrow {
+    width: 24px;
+    bottom: 6px;
+  }
+
+  .story__arrow:before, .arrow:after {
+    width: 5px;
+  }
+} 
+
+@media screen and (max-width: 1023px) {
+  .blog__video {
+    height: 295px;
+    width: 525px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .blog-wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .blog__column_left,
+  .blog__column_right {
+    margin-right: 0px;
+    padding: 0;
+  }
+
+  .blog__column_right {
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .blog__video {
+    width: 500px;
+    height: 280px;
+  }
+  
+  .blog__caption {
+    display: none;
+  }
+
+  .blog__title {
+    height: 36px;
+    font-size:  28px;
+  }
+  
+  .blog__text {
+    height: 65px;
+    font-size: 16px;
+  }
+
+  .story__text {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    position: relative;
+    height: 630px;
+  }
+
+  .blog::before {
+    display:  block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    content: "";
+    background: linear-gradient(to top right, #000 49%, #fff 51%);
+    transform: translateY(-100%);
+  }
+  
+  .blog-wrap {
+    position: relative;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .blog__column_left {
+    width: 100%;
+    max-height: 65%;
+    height: 390px;
+  }
+
+  .blog__column_right {
+    justify-content: center;
+    width: 100%;
+    max-width: 682px;
+    height: 185px;
+  }
+
+  .blog__video {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+ }
+
+  .blog__title {
+    height: auto;
+    margin-bottom: 10px;
+    font: normal 30px/37px 'GothamPro-Bold';
+  }
+  
+  .blog__text {
+    height: 84px;
+    margin-bottom: 0;
+    padding-top: 5px;
+    font: normal 20px/25px 'GothamPro';
+  }
+
+  .video-play {
+    width: 48.5px;
+    height: 48.5px;
+    top: 44%;
+    right: 46.6%;
+  }
+
+  .video-play::after {
+    top: 21px;
+    right: 14px;
+  }
+
+  .stories {
+    height: 700px;
+    padding-top: 15px;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .stories__title {
+    height: auto;
+    margin-bottom: 15px;
+    font: normal 30px/29px 'GothamPro-Bold';
+  }
+
+  .stories-wrap {
+    align-items: flex-end;
+    height: 515px;
+    width: 89%;
+    margin: 0 auto; 
+    padding-top: 0;
+  }
+
+  .story {
+    width: 46%;
+    max-width: 312px;
+    height: 484px;
+    padding-bottom: 0;
+  }
+
+  .story_third {
+    display: none
+  }
+
+  .story__img {
+    width: 100%;
+    height: 34.6%;
+    max-height: 165.54px;
+    margin-bottom: 0px;
+  }
+
+  .story__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .story__name {
+    height: 27px;
+    font: normal 25px/24px 'GothamPro-Bold';
+  }
+
+  .story__text {
+    height: 238px;
+    width: 100%;
+    margin-bottom: 5px;
+    font: normal 20px/25px 'GothamPro';
+  }
+
+  .story__options {
+    width: 100%;
+    height: 13.5px;
+  }
+
+  .story__caption {
+    width: 200px;
+    font: normal 20px/19px 'GothamPro-Bold';
+  }
+
+  .story__date {
+    align-self: flex-end;
+    font: normal 15px/14px 'GothamPro-Bold';
+    opacity: 1;
+  }
+
+  .story__arrow {
+    width: 47px;
+    bottom: 9px;
+    border-bottom: 2px solid #fff;
+  }
+
+  .story__arrow:before, .arrow:after {
+    width: 7px;
+    height: 2px;
+    content: "";
+    background: #fff;
+  }
+}
+
+@media (max-width: 750px) {
+  .story_third,.story_second {
+    display: none
+  }
+  
+  .stories__title {
+    margin-bottom: 30px;
+  }
+
+  .stories-wrap {
+    justify-content: center;
+    align-items: center;
+    width:  92%
+  }
+
+  .story_prime {
+    width: 100%;
+    max-width: 690px;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .story__img {
+    width:  100%;
+    min-height: 280px;
+    margin-bottom: 20px;
+  }
+
+  .img_anagoa {
+    background-image: url(../img/story_1-full.jpg);
+  }
+
+  .story__name {
+    height: 27px;
+    margin-bottom: 8px;
+    font: normal 25px/24px 'GothamPro-Bold';
+    text-align: center;
+  }
+
+  .story__text {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog {
+    height: 420px;
+  }
+
+  .blog::before {
+    top: 1px;
+    height: 17px;
+    background: linear-gradient(to top right, #000 48%, #fff 52%);
+  }
+  
+  .blog-wrap {
+    justify-content: flex-start;
+    width: 75%;
+  }
+
+  .blog__title {
+    width: 241px;
+    height: 64px;
+    margin: 0 auto;
+    font: normal 20px/25px 'GothamPro-Bold';
+  }
+  
+  .blog__text {
+    height: auto;
+    margin-bottom: 0;
+    font: normal 14px/17px 'GothamPro';
+  }
+  
+  .blog__video {
+    width: 100%;
+    height: 160px;
+    background-position: center;
+  }
+  
+  .video-play {
+    width: 21px;
+    height: 21px;
+    top: 32.5%;
+    right: 46%;
+  }
+
+  .video-play::after {
+    top: 9px;
+    right: 5px;
+    border-width: 2.5px;
+    border-left-width: 4.5px;
+  }
+
+  .blog__column_left {
+    height: 217px;
+  }
+
+  .blog__column_right {
+    justify-content: center;
+    height: 200px;
+    max-width: 285px;
+    padding-bottom: 6px;
+    text-align: center;
+  }
+  
+  .stories {
+    justify-content: flex-start;
+    height: 520px;
+    padding-top: 40px;
+  }
+
+  .stories-wrap {
+    width: 75%;
+    height: 365px;
+  }
+
+  .stories__title {
+    height: 46px;
+    font: normal 20px/19px 'GothamPro-Bold';
+    white-space: nowrap;
+    margin-bottom:  0;
+  }
+
+  .story {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .story__img {
+    width:  100%;
+    max-width: 285px;
+    min-height: 148px;
+    margin-bottom: 32px;
+    background-size: cover;
+  }
+
+  .story__info {
+    width: 100%;
+    max-width: 285px;
+    min-height: 200px;
+  }
+
+  .story__name {
+    margin-bottom:  0;
+    font: normal 20px/19px 'GothamPro-Bold';
+    text-align: left;
+  }
+
+  .story__text {
+    width: 100%;
+    margin-bottom:  30px;
+    font: normal 14px/17px 'GothamPro';
+  }
+
+  .story__options {
+    width: 100%;
+    height: 12px;
+  }
+
+  .story__caption {
+    max-width: 49%;
+    font: normal 12px/11px 'GothamPro-Bold';
+  }
+
+  .story__arrow {
+    width: 28%;
+    bottom: 5px;
+  }
+
+  .story__arrow:before, .arrow:after {
+    width: 5px;
+  }
+  
+  .story__date {
+    font: normal 15px/14px 'GothamPro-Bold';
+  }
+}
+
+@media (max-width: 320px) {
+  .blog-wrap,
+  .stories-wrap {
+    width: 88%;
+    max-width: 280px;
+  }
+
+  .blog__text {
+    padding-top: 4px;
+  }
+
+  .stories {
+    justify-content: flex-start;
+  }
+
+  .story__img {
+    margin-bottom: 29px;
+  }
+
+  .stories__title {
+    padding-top: 25px;
+    height: 73px;
+  }
+}
